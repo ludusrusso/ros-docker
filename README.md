@@ -1,4 +1,4 @@
-# Docker ROS container
+# Docker ROS container
 
 This is a personal Docker container running ROS used for development
 
