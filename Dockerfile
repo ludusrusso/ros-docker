@@ -2,8 +2,7 @@ FROM ros:kinetic-robot
 MAINTAINER ludus.russo@gmail.com
 
 RUN apt-get update && apt-get install ros-kinetic-rosbridge-suite -y
-
-COPY ./ros_entrypoint.sh /
+RUN ["/bin/bash", "-c", "source /opt/ros/kinetic/setup.bash"]
 
 ENTRYPOINT ["/ros_entrypoint.sh"]
 
